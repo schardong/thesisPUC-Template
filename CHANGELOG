@@ -1,0 +1,21 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.7]
+### Added
+- Created new commands for the keywords in the abstract and separated them from the keywords in the catalographic sheet. This was due to punctuation problems in the abstract and the sheet
+- Added the command "\abrevlist" to include the abreviations list, usually included in a separate file. In this example, the abbreviations are located in the [abrevs.tex](abrevs.tex) file
+- Added the command "\extjurymember" for the external jury members. This was created because the "\jurymember" commands require the department of the jury member as input, which is not used for external jury members
+- Added another document option: "dsc". When a document has this option, the type is set to doctoral thesis, and the title is set to Doctor of Science, instead of Doctor of Philosophy. The "phd" type remains unchanged.
+  - Added the "doutoradociencia" type as well. It behaves like the "dsc" type. The original "doutorado" behaves like the "phd" option
+
+### Changed
+- Fixed the spacing between some terms on the statement at the beginning of the jury members page
+- Increased the minipage size of the english and portuguese abstracts, from 12cm to 12.5cm, thus, aligining the thesis information area with the abstract
+- Fixed a small issue with the addition of dsc document type. The abstract header would still read "Dissertação de mestrado", since it the LaTeX tested only for phd. Forgot to fix this.
+
+## [1.0.6-before]
+### Unrecorded

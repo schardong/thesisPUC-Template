@@ -1194,7 +1194,7 @@ Centro Técnico Científico}}
   \vspace{\stretch{3}}%
   \par\indent%
   \begin{minipage}{12.5cm}\singlespacing%
-  \puc@authorR; \puc@advisorR\ifthenelse{\equal{\puc@coadvisor}{}}{}{; \puc@coadvisorR}\ifthenelse{\equal{\puc@coadvisorII}{}}{}{; \puc@coadvisorIIR}\ifthenelse{\equal{\puc@coadvisorIII}{}}{}{; \puc@coadvisorIIIR}. \textbf{\puc@title}. \puc@city, \puc@year. \pageref{LastPage}p.   \ifthenelse{\boolean{puc@phd}}{Tese de Doutorado}{Dissertação de Mestrado} -- Departamento de \puc@department, \puc@university.%
+  \puc@authorR; \puc@advisorR\ifthenelse{\equal{\puc@coadvisor}{}}{}{; \puc@coadvisorR}\ifthenelse{\equal{\puc@coadvisorII}{}}{}{; \puc@coadvisorIIR}\ifthenelse{\equal{\puc@coadvisorIII}{}}{}{; \puc@coadvisorIIIR}. \textbf{\puc@title}. \puc@city, \puc@year. \pageref{LastPage}p.   \ifthenelse{\boolean{puc@phd} \or \boolean{puc@dsc}}{Tese de Doutorado}{Dissertação de Mestrado} -- Departamento de \puc@department, \puc@university.%
   \end{minipage}\onehalfspacing%
   \vspace*{\stretch{1}}%
   \par%
@@ -1239,7 +1239,7 @@ Centro Técnico Científico}}
     \puc@coadvisorR~(Co-Advisor)}\ifthenelse{\equal{\puc@coadvisorII}{}}{}{;
     \puc@coadvisorIIR~(Co-Advisor)}\ifthenelse{\equal{\puc@coadvisorIII}{}}{}{;
     \puc@coadvisorIIIR~(Co-Advisor)}. \textbf{\puc@titleuk}. \puc@city,
-  \puc@year. \pageref{LastPage}p.   \ifthenelse{\boolean{puc@phd}}{Tese
+  \puc@year. \pageref{LastPage}p.   \ifthenelse{\boolean{puc@phd} \or \boolean{puc@dsc}}{Tese
     de doutorado}{Dissertação de mestrado} -- Departamento de \puc@department, \puc@university.%
   \end{minipage}\onehalfspacing%
   \vspace*{\stretch{1}}%
