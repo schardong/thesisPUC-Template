@@ -40,9 +40,9 @@
 \newcommand{\docdate}{}  % See the renewcommands below,
 \newcommand{\filedate}{} % these contain the content;-))
 \newcommand{\fileversion}{}
-\renewcommand{\docdate}{2018/12/11}
-\renewcommand{\filedate}{2018/12/11}
-\renewcommand{\fileversion}{1.0.7}
+\renewcommand{\docdate}{2019/03/08}
+\renewcommand{\filedate}{2019/03/08}
+\renewcommand{\fileversion}{1.0.8}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ThesisPUC}%
 [\filedate\space v\fileversion\space Thesis PUC-Rio document class]
@@ -567,12 +567,23 @@
 %%% theorems environments
 %%%
 
-\renewcommand{\theequation}{\thechapter-\arabic{equation}}
-\newtheorem{definition}{Definição}[chapter]
-\newtheorem{theorem}[definition]{Teorema}
-\newtheorem{proposition}[definition]{Proposição}
-\newtheorem{corollary}[definition]{Corolário}
-\newenvironment{proof}{\par \noindent \textit{Prova}.}{\hfill $\blacksquare$}
+\ifthenelse{\boolean{puc@localebr}}{%
+  \renewcommand{\theequation}{\thechapter-\arabic{equation}}
+  \newtheorem{definition}{Definição}[chapter]
+  \newtheorem{theorem}[definition]{Teorema}
+  \newtheorem{proposition}[definition]{Proposição}
+  \newtheorem{corollary}[definition]{Corolário}
+  \newtheorem{lemma}[definition]{Lema}
+  \newenvironment{proof}{\par \noindent \textit{Prova}.}{\hfill $\blacksquare$}
+}{%
+  \renewcommand{\theequation}{\thechapter-\arabic{equation}}
+  \newtheorem{definition}{Definition}[chapter]
+  \newtheorem{theorem}[definition]{Theorem}
+  \newtheorem{proposition}[definition]{Proposition}
+  \newtheorem{corollary}[definition]{Corollary}
+  \newtheorem{lemma}[definition]{Lemma}
+  \newenvironment{proof}{\par \noindent \textit{Proof}.}{\hfill $\blacksquare$}
+}
 
 
 %%%
