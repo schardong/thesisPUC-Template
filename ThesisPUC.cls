@@ -947,8 +947,8 @@ Centro Técnico Científico}}
   Pós--graduação em \puc@program ~do Departamento de \puc@department ~do
   \puc@school ~da \puc@uni.}
 
-\newcommand{\puc@presentedformscuk}{Thesis presented to the Programa de
-  Pós--graduação em \puc@program ~da \puc@uni ~in partial fulfillment of
+\newcommand{\puc@presentedformscuk}{Dissertation presented to the Programa de
+  Pós--graduação em \puc@program ~of \puc@uni ~in partial fulfillment of
   the requirements for the degree of Mestre em \puc@program.}
 
 \newcommand{\puc@showfront}{%
