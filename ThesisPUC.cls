@@ -40,9 +40,9 @@
 \newcommand{\docdate}{}  % See the renewcommands below,
 \newcommand{\filedate}{} % these contain the content;-))
 \newcommand{\fileversion}{}
-\renewcommand{\docdate}{2019/03/08}
-\renewcommand{\filedate}{2019/03/08}
-\renewcommand{\fileversion}{1.0.8}
+\renewcommand{\docdate}{2019/04/24}
+\renewcommand{\filedate}{2019/04/24}
+\renewcommand{\fileversion}{1.0.9}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ThesisPUC}%
 [\filedate\space v\fileversion\space Thesis PUC-Rio document class]
