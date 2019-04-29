@@ -1,12 +1,12 @@
 %% -*- coding: utf-8; -*-
-\documentclass[msc,american]{ThesisPUC}
+\documentclass[phd,american]{ThesisPUC}
 
 %---------- Math ----------%
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{bbm}
-%---------- Floting ----------%
+%---------- Floating ----------%
 \usepackage{float}
 %---------- Algorithm ----------%
 \usepackage[algosection, algoruled]{algorithm2e}
@@ -21,7 +21,7 @@
 \usepackage{psfrag,epsf}
 \usepackage{multirow}
 
-\graphicspath{{images/}}
+\graphicspath{{../../common/images/}}
 
 %---------- Cover ----------%
 \author{Guilherme Gonçalves Schardong}
@@ -135,13 +135,13 @@ Bachelor's in Computer Science (2011) and Masters' in Informatics (2014) at the 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\input{ThesisText}
+\input{../common/ThesisText}
 
 \arial
-\bibliography{references}
+\bibliography{../../common/references}
 
 \normalfont
 \appendix
-\input{appendix.tex}
+\input{../common/appendix.tex}
 
 \end{document}
