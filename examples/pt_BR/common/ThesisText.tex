@@ -80,6 +80,25 @@ A Tabela~\ref{tab:cmg-results} apresenta o formato padrão de tabelas desse mode
   \label{fig:explicit-encoding-tllamp-inc}
 \end{figure}
 
+\subsection{Exemplos de teoremas, lemas e provas}
+
+\begin{theorem}
+Dada a função $f$, cuja derivada existe em todos os pontos de seu domínio, então $f$ é chamada função contínua.
+\end{theorem}
+
+\begin{theorem}[Teorema de Pitágoras]
+\label{pythagorean}
+Esse é um teorema que trata de triângulos retângulos, e pode ser sumarizado pela equação a seguir:
+\[ x^2 + y^2 = z^2 \]
+\end{theorem}
+
+Uma consequência do Teorema~\ref{pythagorean} é o Corolário~\ref{corollary}
+
+\begin{corollary}
+\label{corollary}
+Não existe triângulo retângulo de lados 3cm, 4cm e 6cm.
+\end{corollary}
+
 \begin{lemma}[Operações matriciais que preservam unimodularidade]
   As operações matriciais a seguir, chamadas de operações unimodulares, preservam a unimodularidade de uma matriz se esta for unimodular:
 \begin{enumerate}
@@ -89,6 +108,15 @@ A Tabela~\ref{tab:cmg-results} apresenta o formato padrão de tabelas desse mode
     \item Transposição
 \end{enumerate}
 \end{lemma}
+
+\begin{lemma}
+\label{line-segs}
+Dados dois segmentos de linha de comprimentos $a$ e $b$ respectivamente, existe um número $r \in \mathbb{R}$ tal que $b=ra$.
+\end{lemma}
+
+\begin{proof}
+A prova do Lemma~\ref{line-segs} pode ser construída por contradição. Basta assumir que a premissa é falsa e seguir a prova, em algum momento a prova cairá em contradição, portanto, o lema original é verdadeiro.
+\end{proof}
 
 %%% Local Variables:
 %%% mode: latex

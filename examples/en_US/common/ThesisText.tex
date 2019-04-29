@@ -9,7 +9,7 @@ This is a simple, introductory text demonstrating how to use the PUC-Rio's thesi
 In summary, the contributions of this class are:
 
 \begin{itemize}
-  \item A \LaTeX~template for thesis/dissertations for PUC-Rio's students;
+  \item A more up-to-date \LaTeX~template for thesis/dissertations for the academic community of PUC-Rio's;
   \item A way to centralize changes and increase the reach of fixes and adjustments.
 \end{itemize}
 
@@ -18,9 +18,9 @@ Table~\ref{tab:cmg-results} and Figure~\ref{fig:explicit-endoding-szafir} presen
 \section{Thesis Structure}
 \label{sec:organization}
 
-This is just a dummy subsection, don't worry about it.
+\subsection{Example subsection}
 
-\begin{table}[h]
+\begin{table}[H]
   \centering
   \caption[Errors for scenarios selected using the industry standard approach.]{Scenarios and errors ($\times 10^{10}$) for the industry standard approach.}
   \begin{tabular}{llrrr}
@@ -80,6 +80,27 @@ This is just a dummy subsection, don't worry about it.
   \label{fig:explicit-encoding-tllamp-inc}
 \end{figure}
 
+\subsection{Sample theorems, lemmas and proofs}
+
+\begin{theorem}
+Let $f$ be a function whose derivative exists in every point, then $f$ is 
+a continuous function.
+\end{theorem}
+ 
+\begin{theorem}[Pythagorean theorem]
+\label{pythagorean}
+This is a theorema about right triangles and can be summarised in the next 
+equation 
+\[ x^2 + y^2 = z^2 \]
+\end{theorem}
+ 
+And a consequence of theorem \ref{pythagorean} is the statement in the next 
+corollary.
+ 
+\begin{corollary}
+There's no right rectangle whose sides measure 3cm, 4cm, and 6cm.
+\end{corollary}
+
 \begin{lemma}[Unimodularity preserving matrix operations]
 The following matrix operations, called unimodular operations, preserve the unimodularity property from an already unimodular matrix:
 \begin{enumerate}
@@ -89,6 +110,17 @@ The following matrix operations, called unimodular operations, preserve the unim
     \item Transpose
 \end{enumerate}
 \end{lemma}
+
+\begin{lemma}
+\label{line-segs}
+Given two line segments whose lengths are $a$ and $b$ respectively there 
+is a real number $r$ such that $b=ra$.
+\end{lemma}
+ 
+\begin{proof}
+To prove Lemma~\ref{line-segs} by contradiction try and assume that the statemenet is false,
+proceed from there and at some point you will arrive to a contradiction.
+\end{proof}
 
 %%% Local Variables:
 %%% mode: latex

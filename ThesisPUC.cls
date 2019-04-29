@@ -1075,7 +1075,7 @@ Centro Técnico Científico}}
 %-----------------%
   \puc@rightmargin{\puc@city, %
     \ifthenelse{\boolean{puc@localebr}}%
-    {\puc@day\ \puc@month\, \puc@year}%
+    {\puc@day\ de \puc@month\ de \puc@year}%
     {\puc@month\ \puc@day, \puc@year}}%
 }
 

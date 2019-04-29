@@ -6,10 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.9]
 ### Added
-- More examples showing the different document types (english only)
+- More examples showing the different document types (english and portuguese)
+- Added a subsection with theorem, lemma, corollary and proof examples
 
 ### Changed
 - Fixed the kind of document printed on the final PDF based on the degree type (Dissertation, Thesis)
+- Fixed the date format for portuguese documents
 - Fixed typos
 
 ## [1.0.8]
