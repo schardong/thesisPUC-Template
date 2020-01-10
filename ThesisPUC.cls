@@ -4,7 +4,7 @@
 %%
 %% Any modified versions of this file must be renamed
 %% with new filenames distinct from ThesisPUC.cls.
-%% 
+%%
 %% ----------------------------------------------------------------------------
 %%
 %% Thomas Lewiner
@@ -928,10 +928,9 @@ Centro Técnico Científico}}
 %%% Front page
 %%%
 
-\newcommand{\puc@approvedby}{Aprovada pela Comissão Examinadora abaixo
-  assinada.}
+\newcommand{\puc@approvedby}{Aprovada pela Comissão Examinadora abaixo.}
 
-\newcommand{\puc@approvedbyuk}{Approved by the undersigned Examination
+\newcommand{\puc@approvedbyuk}{Approved by the Examination
   Committee.}
 
 \newcommand{\puc@presentedforphd}{Tese apresentada como requisito
@@ -1123,9 +1122,9 @@ Centro Técnico Científico}}
       \hspace*{.6cm} Inclui bibliografia \\ \\ \par%
       \hspace*{.6cm}%
         \newcounter{keycount}\setcounter{keycount}{1}%
-        \renewcommand{\catalogprekey}[1]{\arabic{keycount}. ##1 -- Teses.\addtocounter{keycount}{1}\ }%        
+        \renewcommand{\catalogprekey}[1]{\arabic{keycount}. ##1 -- Teses.\addtocounter{keycount}{1}\ }%
         \puc@catalogprekeywords%
-        \renewcommand{\key}[1]{\arabic{keycount}. ##1.\addtocounter{keycount}{1}\ }%        
+        \renewcommand{\key}[1]{\arabic{keycount}. ##1.\addtocounter{keycount}{1}\ }%
         \puc@keywords%
         \setcounter{keycount}{1}%
         \renewcommand{\key}[1]{\ifthenelse{\equal{##1}{}}{}{\Roman{keycount}. ##1.\addtocounter{keycount}{1}\ }}%
@@ -1404,7 +1403,7 @@ Centro Técnico Científico}}
   \puc@showfront%
   \puc@showjury%
   \puc@showcopyrights%
-  % 
+  %
   \ifthenelse{\boolean{hasdedication}}{\puc@showdedication}{}%
   \puc@showacknowledgment%
   \ifthenelse{\boolean{puc@localebr}}%
@@ -1420,7 +1419,7 @@ Centro Técnico Científico}}
   \puc@showtables%
   \ifthenelse{\boolean{hasabrevlist}}{\puc@abrevlist}{}%
   \ifthenelse{\boolean{hasepigraph}}{\puc@showepigraph}{}%
-  % 
+  %
   \puc@setmargins@text%
   \ifthenelse{\boolean{puc@tight}}{}{\onehalfspacing}%
   \normalfont%
