@@ -1,5 +1,5 @@
 %% -*- coding: utf-8; -*-
-\documentclass[phd,brazilian]{ThesisPUC}
+\documentclass[dsc,brazilian]{ThesisPUC} % Aqui é possível mudar o padrão do documento dsc(Doutor em Ciências), msc(Mestre) or phd(Doutor) dependendo do seu curso
 
 %---------- Math ----------%
 \usepackage{amsmath}
@@ -21,7 +21,7 @@
 \usepackage{psfrag,epsf}
 \usepackage{multirow}
 
-\graphicspath{{../../common/images/}}
+\graphicspath{{../common/images/}}
 
 %---------- Cover ----------%
 \author{Guilherme Gonçalves Schardong}
@@ -137,13 +137,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\input{../common/ThesisText}
+\input{ThesisText}
 
 \arial
-\bibliography{../../common/references}
+\bibliography{../common/references}
 
 \normalfont
 \appendix
-\input{../common/appendix.tex}
+\input{appendix.tex}
 
 \end{document}
